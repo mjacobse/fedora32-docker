@@ -4,7 +4,7 @@ RUN dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-re
     boost-python3-devel python3-devel rpm-build chrpath blas-static valgrind lapack-devel \
     texlive-multirow texlive-units texlive-moreverb texlive-framed texlive-mdframed \
     texlive-latex-bin-bin SuperLU-devel texlive-hyphen-base texlive-amscls texlive-symbol \
-    texlive-cm texlive-updmap-map texlive-makeindex-bin texlive-bibtex-bin openblas-devel sshpass && \
+    texlive-cm texlive-updmap-map texlive-makeindex-bin texlive-bibtex-bin openblas-devel sshpass wxGTK3-devel && \
     dnf clean all && \
     dbus-uuidgen > /var/lib/dbus/machine-id
 ENV LANG en_US.utf-8
