@@ -6,5 +6,5 @@ RUN dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-re
     texlive-latex-bin-bin SuperLU-devel texlive-hyphen-base texlive-amscls texlive-symbol \
     texlive-cm texlive-updmap-map texlive-makeindex-bin texlive-bibtex-bin openblas-devel sshpass wxGTK3-devel && \
     dnf clean all && \
-    dbus-uuidgen --ensure
+    mkdir -p /var/lib/dbus && dbus-uuidgen > /var/lib/dbus/machine-id
 ENV LANG en_US.utf-8
